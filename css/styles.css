@@ -209,18 +209,24 @@ color: var(--primary-text-color);
   .mobile-menu-open {
     display: none;
   }
+
 .contact-info {
 flex-direction: column;
 align-items: flex-end;
 }
+
 .contact-info .link{
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 0;
   font-size: 12px;
   line-height: 1.1666;
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
 }
+
+.contact-info .item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
 .site-nav{
   margin-left: 120px;
 }
