@@ -37,6 +37,13 @@
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open_icon" width="32"
+              height="22">
+            <use href="./images/icons.svg#burger-icon"
+              ></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="contact-info list">
             <li class="item">
@@ -50,19 +57,85 @@
           </ul>
         </address>
       </div>
+
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-container">
+          <button class="close-btn" data-menu-close>
+          <svg class="close-svg">
+            <use href="./images/icons.svg#closebtn"></use>
+          </svg>
+        </button>
+        <ul class="list site-nav-mobile-menu">
+            <li class="item-mobile-menu">
+              <a href="./index.html" class="link">Studio</a>
+            </li>
+            <li class="item-mobile-menu">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="item-mobile-menu"><a href="" class="link">Contacts</a></li>
+          </ul>
+          
+          <ul class="contact-info-mobile list">
+            <li class="item-tel">
+              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link item-email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+      <div class="mobile-menu-social">
+                <ul class="mobile-social">
+                  <li>
+                    <a class="link-social" href="#">
+                      <svg class="social">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-social" href="#">
+                      <svg class="social">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-social" href="#">
+                      <svg class="social">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-social" href="#">
+                      <svg class="social">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </div>
+
+
+
     </header>
     <main>
       <!-- Секція 1 -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button data-modal-open class="button primary" type="button">
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Секція 2 -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title advantages">advantages</h2>
           <ul class="list advantages">
@@ -96,9 +169,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Секція 3 -->
-      <section>
+      <!-- <section>
         <div class="container work-departments">
           <h2 class="section-title-big">What are we doing</h2>
           <ul class="list work-departments">
@@ -113,14 +186,19 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Секція 4 -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="section-title-big">Our Team</h2>
           <ul class="list card">
             <li class="team-member">
-              <img src="./images/mark.jpg" alt="Product Designer" width="264" />
+              <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+                src="./images/mark.jpg"
+                alt="Product Designer"
+                width="264"
+              />
               <div class="team-description">
                 <h3 class="card-title">Mark Guerrero</h3>
                 <p class="card-text">Product Designer</p>
@@ -156,9 +234,9 @@
                 </ul>
               </div>
             </li>
-
             <li class="team-member">
               <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Frontend Developer"
                 width="264"
@@ -199,7 +277,12 @@
               </div>
             </li>
             <li class="team-member">
-              <img src="./images/сamila.jpg" alt="Marketing" width="264" />
+              <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
+                src="./images/camila.jpg"
+                alt="Marketing"
+                width="264"
+              />
               <div class="team-description">
                 <h3 class="card-title">Camila Garcia</h3>
                 <p class="card-text">Marketing</p>
@@ -236,7 +319,12 @@
               </div>
             </li>
             <li class="team-member">
-              <img src="./images/daniel.jpg" alt="UI Designer" width="264" />
+              <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
+                src="./images/daniel.jpg"
+                alt="UI Designer"
+                width="264"
+              />
               <div class="team-description">
                 <h3 class="card-title">Daniel Wilson</h3>
                 <p class="card-text">UI Designer</p>
@@ -274,11 +362,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція 5 -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title-big">Customers</h2>
           <ul class="customers-list list">
@@ -326,10 +414,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-left-right">
         <div class="left-container">
           <a href="./index.html" class="link"
@@ -376,40 +464,37 @@
         </div>
 
         <form class="footer-form">
-         <p class="footer-social-media-title">Subscribe</p>
-            <div class="form-field">
-              <input
-                type="email"
-                id="email"
-                placeholder="E-mail"
-                class="form-input"
-                aria-label="email"
-              />
-              <button type="submit" class="button subscribe-btn">
+          <p class="footer-social-media-title">Subscribe</p>
+          <div class="form-field">
+            <input
+              type="email"
+              id="email"
+              placeholder="E-mail"
+              class="form-input"
+              aria-label="email"
+            />
+            <button type="submit" class="button subscribe-btn">
               Subscribe
               <svg class="telegram">
                 <use href="./images/icons.svg#telegram"></use>
               </svg>
             </button>
-            </div>
-            
+          </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="title-modal">
-          Leave your contacts and we will call you back
-        </p>
+        <p class="title-modal">Leave your contacts and we will call you back</p>
         <button class="close-btn" data-modal-close>
           <svg class="close-svg">
             <use href="./images/icons.svg#closebtn"></use>
           </svg>
-        </button>
+        </button> -->
 
-        <!-- <div class="modal-container"> -->
-        <form class="modal-container">
+    <!-- <div class="modal-container"> -->
+    <!-- <form class="modal-container">
           <label for="name" class="label">Name</label>
           <div class="form-flex name">
             <input type="text" name="name" id="name" class="input" />
@@ -457,12 +542,13 @@
               <span><a href="" class="policy-link">Privacy Policy</a></span>
             </label>
           </div>
-          
         </form>
         <button class="modal-button" type="submit">Send</button>
       </div>
     </div>
-    <!-- </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+     -->
+     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
