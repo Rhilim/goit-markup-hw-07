@@ -646,6 +646,12 @@ url('../images/hero-overlay-tablet@2x.jpg');
 margin-bottom: 72px;
   }
 }
+@media screen and (min-width: 768px){
+  .li-item:not(:last-child){
+margin-bottom: ;
+
+  }
+}
 
 @media screen and (max-width: 1199px){
   .li-item::before{
@@ -667,18 +673,12 @@ margin-bottom: 72px;
 }
 
 
-.section-title {
-  color: var(--title-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 8px;
+@media screen and (max-width: 767px){
+.section-title{
+  text-align: center;
 }
-
-@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 1199px) {
 .section-title{
   color: var(--title-color);
   font-weight: 700;
@@ -688,10 +688,21 @@ margin-bottom: 72px;
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 8px;
-  text-align: center;
 }
 }
 
+@media screen (min-widht:1200px){
+  .section-title {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+}
 .section-text {
   margin-top: 0;
   font-style: normal;
@@ -774,6 +785,7 @@ letter-spacing: 0.02em;
   margin-right: auto;
   margin-left: auto;
    }
+  
 .team-member:not(:last-child){
 margin-bottom: 72px;
 }
@@ -812,7 +824,7 @@ margin-bottom: 72px;
 .link-social:focus {
   background-color: var(--active);
 }
-
+}
  .card-title {
   margin-top: 0px;
   margin-bottom: 8px;
@@ -1003,21 +1015,38 @@ margin-bottom: 72px;
   column-gap: 24px;
   margin-bottom: 72px;
 }
-.list.advantages,
+
+
+@media screen and (max-width: 767px) {
+  .list-advantages,
+  .list.card{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+  }
+  .li-item{
+    width: 356px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+.list-advantages{
+  flex-wrap: nowrap;
+}
 .list.work-departments,
 .list.card {
   display: flex;
   justify-content: center;
   column-gap: 24px;
-}
-
-@media screen and (max-width: 767px) {
-  .list.advantages,
-  .list.card{
-    display: block;
-  }
-}
-
 .shadow {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1025,6 +1054,8 @@ margin-bottom: 72px;
 .shadow:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+}
 }
 
 .backdrop {
