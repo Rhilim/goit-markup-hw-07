@@ -129,6 +129,7 @@ a {
 }
 
 /* burger-button */
+
 .mobile-menu-open{
   border:none;
   background: transparent;
@@ -136,6 +137,27 @@ a {
   line-height: 0;
 }
 /* MOBILE-MENU */
+
+.site-nav-mobile-menu{
+  margin-bottom: 284px;
+}
+.site-nav-mobile-menu a{
+  display: inline-block;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.111;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.site-nav-mobile-menu a:focus {
+  color: var(--active);
+}
+
 .mobile-menu{
   position: fixed;
   width: 100%;
@@ -230,6 +252,9 @@ align-items: flex-end;
 .site-nav{
   margin-left: 120px;
 }
+.site-nav a{
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .current-page {
@@ -238,7 +263,7 @@ align-items: flex-end;
 
 .link.current-page {
   color: var(--active);
-}
+  }
 
 .current-page::after {
   position: absolute;
@@ -255,7 +280,19 @@ align-items: flex-end;
 .site-nav .item + .item {
   margin-left: 40px;
 }
+}
 
+
+/* DESKTOP-header */
+
+@media screen and (min-width:1200px) {
+  .contact-info{
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-info .item:not(:last-child) {
+  margin-bottom: 0;
+}
 .site-nav a {
   display: block;
   padding-top: 24px;
@@ -273,27 +310,10 @@ align-items: flex-end;
 .site-nav a:focus {
   color: var(--active);
 }
-.site-nav-mobile-menu{
-  margin-bottom: 284px;
-}
-.site-nav-mobile-menu a{
-  display: inline-block;
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.111;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-.site-nav-mobile-menu a:hover,
-.site-nav-mobile-menu a:focus {
-  color: var(--active);
-}
 
 .address {
+  margin-left: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -314,6 +334,9 @@ align-items: flex-end;
   padding-bottom: 24px;
   display: block;
 }
+}
+
+
 
 
 /* 2. main */
@@ -321,9 +344,9 @@ align-items: flex-end;
 .link {
   text-decoration: none;
 }
-/* .link:active{
+.link:active{
   color: var(--active)
-} */
+}
 .contact-info a {
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1278,7 +1301,7 @@ margin-bottom: 72px;
 }
 
 
-/* HW - 6 
+/* HW -7 
 Adaptive*/
 
 mobile - max-width: 480px;
