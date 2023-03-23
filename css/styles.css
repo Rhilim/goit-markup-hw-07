@@ -75,7 +75,7 @@ a {
   }
 @media screen and (min-width: 1200px){
   .container{
-    width: 1200px;
+    width: 1158px;
   }
   }
   
@@ -243,6 +243,7 @@ align-items: flex-end;
   line-height: 1.1666;
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .contact-info .item:not(:last-child) {
@@ -275,6 +276,9 @@ align-items: flex-end;
   background-color: var(--active);
   height: 4px;
   border-radius: 2px;
+}
+.address{
+font-style: normal;
 }
 
 .site-nav .item + .item {
@@ -314,7 +318,6 @@ align-items: flex-end;
 
 .address {
   margin-left: auto;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -329,15 +332,18 @@ align-items: flex-end;
 .contact-info {
   display: flex;
 }
+.contact-info .link{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .contact-info a {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+  }
 }
-}
-
-
-
 
 /* 2. main */
 
