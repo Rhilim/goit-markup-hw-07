@@ -866,8 +866,7 @@ letter-spacing: 0.02em;
   row-gap: 40px;
 }
 
-
-  .team-member { 
+.team-member { 
   width: 264px;
   margin: 12px;
   }
@@ -875,9 +874,11 @@ letter-spacing: 0.02em;
 .team-description{
   width: 264px;
 }
-
-
- 
+@media screen and (min-width: 1200px){
+.team-member { 
+  margin: 0;
+    }
+}
 
 .customers-list {
   list-style: none;
