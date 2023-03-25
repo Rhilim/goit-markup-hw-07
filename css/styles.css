@@ -874,6 +874,8 @@ letter-spacing: 0.02em;
 .team-description{
   width: 264px;
 }
+}
+
 @media screen and (min-width: 1200px){
 .team-member { 
   margin: 0;
