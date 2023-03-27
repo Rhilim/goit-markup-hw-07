@@ -675,7 +675,7 @@ margin-bottom: ;
 
 
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px){
 .section-title{
   color: var(--title-color);
   font-weight: 700;
@@ -685,12 +685,13 @@ margin-bottom: ;
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 8px;
-}
-}
-@media screen and (max-width: 767px){
-.section-title{
   text-align: center;
 }
+}
+/* @media screen and (max-width: 767px){
+.section-title{
+  text-align: center;
+} */
 }
 @media screen and (min-width: 1200px){
   .section-title {
@@ -1068,6 +1069,42 @@ width: 1125px;
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 767px) {
+  .footer{
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+.footer-left-right{
+  flex-direction: column;
+  align-items: center;
+  row-gap: 72px;
+}
+.left-container{
+  margin-right: 0;
+  text-align: center;
+}
+.footer-left-text{
+  text-align: left;
+  width: 268px;
+}
+.footer-social-media-title{
+  text-align: center;
+}
+.form-field{
+  flex-direction: column;
+}
+.footer-form{
+  margin-left: 0;
+}
+.form-input{
+  width: 398px;
+  margin-bottom: 16px;
+}
+.subscribe-btn{
+  margin-left: 0;
+  align-self: center;
+}
+}
 
 
 
@@ -1092,6 +1129,9 @@ width: 1125px;
 
   .li-item{
     width: 356px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
