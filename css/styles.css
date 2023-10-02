@@ -19,7 +19,9 @@ web color #4D5AE5 */
   --logo-primbutton-color: #4d5ae5;
   --bcg-secbutton-color: #f4f4fd;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
@@ -1628,3 +1630,10 @@ desktop - max-width: 1200px;
 
 /* mobile-first */
 
+
+
+width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 586px;
+  overflow: scroll;
